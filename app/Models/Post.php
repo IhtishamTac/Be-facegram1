@@ -9,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    public function post_attachment() {
+    public function attachments() {
         return $this->hasMany(PostAttachment::class);
     }
 
